@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>IPV4</title>
+</head>
+<body style="background-color:lightgrey">
+<h1 style="color:red"> IPV4 ADDRESS</h1>
+<p>An IPv4 address is a 32-bit address that uniquely and universally
+ defines the connection of a host or a router to the Internet.</p> 
+<ul>
+
+<li>Address Space</li>
+<p>An address space is the total number of addresses used by the protocol.
+IPv4 uses 32-bit addresses, which means that the address space is 232 or 4,294,967,296 (more than four billion).
+ If there were no restrictions, more than 4 billion devices could be connected to the Internet</p>
+<li>notation</li>
+</ol>
+<p align="center"><img src="notation.png"></p>
+
+<h1 style="color:red">CLASSFUL ADDRESS</h1>
+<p> The whole address space was divided into five classes (class A, B, C, D, and E)
+</p>
+
+<p align="center"><img src="address.png"></p>
+<ul>
+<li>In class A, the network length is 8 bits, but since the first bit, which is 0, defines the class, we can have only seven bits as the network identifier. This means there are only 27 = 128 networks in the world that can have a class A address.</li> 
+<li>In class B, the network length is 16 bits, but since the first two bits, which are (10)2, define the class, we can have only 14 bits as the network identifier. This means there are only 214 = 16,384 networks in the world that can have a class B address.</li>
+<li>All addresses that start with (110)2 belong to class C. In class C, the network length is 24 bits, but since three bits define the class, we can have only 21 bits as the network identifier. This means there are 221 = 2,097,152 networks in the world that can have a class C address.</li> 
+<li>Class D is not divided into prefix and suffix. It is used for multicast addresses. All addresses that start with 1111 in binary belong to class E. As in Class D, Class E is not divided into prefix and suffix and is used as reserve. </li>
+
+
+</ul>
+<h1 style="color:red">IPV4 HEADER</h1>
+<p align="left"><img src="ipv4header.png"></p>
+<ol>
+<li>VERSION: Version of the IP protocol (4 bits), which is 4 for IPv4</li>
+<li>HLEN: IP header length (4 bits), which is the number of 32 bit words in the header. The minimum value for this field is 5 and the maximum is 15.</li>
+<li>Type of service: Low Delay, High Throughput, Reliability (8 bits)</li>
+<li>Total Length: Length of header + Data (16 bits), which has a minimum value 20 bytes and the maximum is 65,535 bytes.</li>
+<li>Identification: Unique Packet Id for identifying the group of fragments of a single IP datagram (16 bits)</li>
+<li>Flags: 3 flags of 1 bit each : reserved bit (must be zero), do not fragment flag, more fragments flag (same order)</li>
+<li>Fragment Offset: Represents the number of Data Bytes ahead of the particular fragment in the particular Datagram. Specified in terms of number of 8 bytes, which has the maximum value of 65,528 bytes.</li>
+<li>Time to live: Datagram’s lifetime (8 bits), It prevents the datagram to loop through the network by restricting the number of Hops taken by a Packet before delivering to the Destination.</li>
+<li>Protocol: Name of the protocol to which the data is to be passed (8 bits)</li>
+<li>Header Checksum: 16 bits header checksum for checking errors in the datagram header</li>
+<li>Source IP address: 32 bits IP address of the sender</li>
+<li>Destination IP address: 32 bits IP address of the receiver</li>
+<li>Option: Optional information such as source route, record route. Used by the Network administrator to check whether a path is working or not.</li>
+</ol>
+<form>
+ <input type="button" value="Go back!" onclick="index.html">
+</form>
+</body>
+</html>

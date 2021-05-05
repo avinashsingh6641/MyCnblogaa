@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>right</title>
+</head>
+<body style="background-color:lightgrey">
+<h1 style="color:red">Network Layer</h1>
+<p align="left"><img src="network.png"></p>
+<h1 style="color:red">Packetizing</h1>
+<p>
+<ol>
+<li>The process of encapsulating the data received from upper layers of the network(also called as payload) in a network layer packet at the source and decapsulating the payload from the network layer packet at the destination is known as packetizing. The source host adds a header that contains the source and destination address and some other relevant information required by the network layer protocol to the payload received from the upper layer protocol, and delivers the packet to the data link layer.</li> 
+<li>The destination host receives the network layer packet from its data link layer, decapsulates the packet, and delivers the payload to the corresponding upper layer protocol. The routers in the path are not allowed to change either the source or the destination address. The routers in the path are not allowed to decapsulate the packets they receive unless they need to be fragmented. </li>
+</ol>
+</p>
+<h1 style="color:red">Routing And Forwading</h1>
+<ol>
+<li>In a network, there are a number of routes available from the source to the destination.</li> 
+<li>The network layer specifies has some strategies which find out the best possible route.</li> 
+<li>There are a number of routing protocols which are used in this process and they should be run to help the routers coordinate with each other and help in establishing communication throughout the network</li>.
+<li>Forwarding is simply defined as the action applied by each router when a packet arrives at one of its interfaces.</li>
+<li>When a router receives a packet from one of its attached networks, it needs to forward the packet to another attached network (unicast routing) or to some attached networks(in case of multicast</li> 
+</ol>
+
+</body>
+</html>
