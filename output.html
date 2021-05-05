@@ -8,23 +8,23 @@
 <ul>
 <li>An IPv6 address is made of 128 bits divided into eight 16-bits blocks. Each block is then converted into 4-digit Hexadecimal numbers separated by colon symbols.</li>
 <li>For example, given below is a 128 bit IPv6 address represented in binary format and divided into eight 16-bits blocks:</li>
-<li> 0010000000000001 0000000000000000 0011001000111000 1101111111100001 0000000001100011 0000000000000000 0000000000000000 1111111011111011</li>
-<li> Each block is then converted into Hexadecimal and separated by ‘:’ symbol:</li>
+<li>Â 0010000000000001 0000000000000000 0011001000111000 1101111111100001 0000000001100011 0000000000000000 0000000000000000 1111111011111011</li>
+<li>Â Each block is then converted into Hexadecimal and separated by â€˜:â€™ symbol:</li>
 <li>2001:0000:3238:DFE1:0063:0000:0000:FEFB</li>
 </ul>
 <ol>
-<li>Rule.1: Discard leading Zero(es):</li>
+<li>Rule.1:Â Discard leading Zero(es):</li>
 <ul>
 <li>In Block 5, 0063, the leading two 0s can be omitted, such as (5th block):</li>
 <li>2001:0000:3238:DFE1:63:0000:0000:FEFB</li>
 </ul>
-<li>Rule.2: If two of more blocks contain consecutive zeroes, omit them all and replace with double colon sign ::, such as (6th and 7th block):</li>
+<li>Rule.2:Â If two of more blocks contain consecutive zeroes, omit them all and replace with double colon sign ::, such as (6th and 7th block):</li>
 <ul>
 <li>2001:0000:3238:DFE1:63::FEFB</li>
 </ul>
 </ol>
 <h1 style="color:red">IPV6 HEADER</h1>
-<p align="left"><img src="D:\blog\ipv6header.png"></p>
+<p align="left"><img src="ipv6header.png"></p>
 <p align="right">
 <ol>
 <li>Version(4bit):it represent the version of internet protocol,i.e. 0110.</li>
